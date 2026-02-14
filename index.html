@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfoli | Aida Carrillo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Aida Carrillo</h1>
+    <p class="subtitle">Estudiant de CFGS DAM · Disseny + Desenvolupament</p>
+
+    <nav class="nav">
+      <a href="#sobre-mi">Sobre mi</a>
+      <a href="#projectes">Projectes</a>
+      <a href="#competencies">Competències</a>
+      <a href="#contacte">Contacte</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="sobre-mi" class="card">
+      <h2>Sobre mi</h2>
+      <p>
+        M’agrada crear solucions digitals útils que facilitin la vida a les persones.
+        Estic cursant 1r de DAM i m’interessa especialment la part tècnica del disseny (UI/UX),
+        el desenvolupament web i l’organització de dades.
+      </p>
+    </section>
+
+    <section id="projectes" class="card">
+      <h2>Projectes</h2>
+
+      <div class="grid">
+        <article class="project">
+          <h3>Mini projecte: Taula de multiplicar (JS)</h3>
+          <p>Exercici per practicar bucles i manipulació del DOM.</p>
+          <p class="tags">HTML · JavaScript</p>
+          <a class="btn" href="projects/taula-multiplicar/" target="_blank" rel="noreferrer">Veure</a>
+        </article>
+
+        <article class="project">
+          <h3>Exercicis SQL (inici)</h3>
+          <p>Consultes bàsiques (SELECT, WHERE, JOIN) i notes de classe.</p>
+          <p class="tags">SQL · Bases de dades</p>
+          <a class="btn" href="#" aria-disabled="true">Pendent</a>
+        </article>
+
+        <article class="project">
+          <h3>Disseny / Branding (selecció)</h3>
+          <p>Selecció de treballs de disseny (logos, webs, materials).</p>
+          <p class="tags">Disseny · UI</p>
+          <a class="btn" href="#" aria-disabled="true">Pendent</a>
+        </article>
+      </div>
+
+      <p class="note">
+        * El portafolis està en construcció: l’aniré ampliant amb projectes del cicle i personals.
+      </p>
+    </section>
+
+    <section id="competencies" class="card">
+      <h2>Competències (DAM)</h2>
+      <ul>
+        <li>Desenvolupament d’aplicacions i interfícies d’usuari.</li>
+        <li>Accés i gestió de bases de dades.</li>
+        <li>Documentació, qualitat i seguretat en projectes.</li>
+      </ul>
+    </section>
+
+    <section id="contacte" class="card">
+      <h2>Contacte</h2>
+      <ul class="links">
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aida-carrillo/" target="_blank" rel="noreferrer">Enllaç</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/ACarrilloIgual" target="_blank" rel="noreferrer">@ACarrilloIgual</a></li>
+        <li><strong>Email:</strong> <span>acarrilloigual@gmail.com</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Aida Carrillo · Portfoli</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
